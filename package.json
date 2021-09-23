@@ -1,0 +1,18 @@
+{
+  "name": "commemorative-dates",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Roberto Umbelino <roberto.umb@gmail.com>",
+  "scripts": {
+    "migrate": "tsnd --respawn --transpile-only src"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.1.1",
+    "prisma": "^3.1.1"
+  }
+}
