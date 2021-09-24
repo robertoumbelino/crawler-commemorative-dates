@@ -30,7 +30,7 @@ const saveCommemorationsFromMonth = async (monthIndex = 0) => {
 
   try {
     crawler.queue({
-      url: 'https://www.guialince.com.br/datas-comemorativas/janeiro',
+      url: `https://www.guialince.com.br/datas-comemorativas/${month}`,
       callback: async (error, res, done) => {
         if (error) {
           console.error(error)
