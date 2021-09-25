@@ -115,18 +115,18 @@ const saveCommemorationsFromMonth = async (monthIndex = 0) => {
 
         await Promise.all(promises)
 
+        /**
+         * Sleep to don't make many requests in destination page.
+         */
+        await new Promise(resolve => setTimeout(resolve, 2000))
+
+        await saveCommemorationsFromMonth(monthIndex + 1)
+
         done()
       }
     })
   } catch ({ message }) {
     console.error(message)
-  } finally {
-    /**
-     * Sleep to don't make many requests in destination page.
-     */
-    await new Promise(resolve => setTimeout(resolve, 2000))
-
-    await saveCommemorationsFromMonth(monthIndex + 1)
   }
 }
 
