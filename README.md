@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Prisma" width="100" title="Prisma" src=".github/icon.png" />
+  <img alt="Prisma" width="150" title="Prisma" src=".github/icon.png" />
 </p>
 
 <h1 align="center">Crawler Commemorative Dates</h1>
