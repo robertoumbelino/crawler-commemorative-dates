@@ -42,7 +42,10 @@ const saveCommemorationsFromMonth = async (monthIndex = 0) => {
   /**
    * Invalid month, finish it.
    */
-  if (!month) return
+  if (!month) {
+    console.log('Finished')
+    return
+  }
 
   console.log(`Getting commemorative dates from ${month}`)
 
